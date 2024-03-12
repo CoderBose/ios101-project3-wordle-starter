@@ -31,9 +31,10 @@ The following **additional** features are implemented:
     <a href="https://www.loom.com/share/cab87acd1c344ac1b6fbb7c98ca51886">
     </a>
     <a href="https://www.loom.com/share/cab87acd1c344ac1b6fbb7c98ca51886">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/cab87acd1c344ac1b6fbb7c98ca51886-with-play.gif">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/cab87acd1c344ac1b6fbb7c98ca51886-1710250235040-with-play.gif">
     </a>
   </div>
+  
 ## Notes
 
 Building an app from the ground up was very challenging. The constraints gave me a hard time, but it was fun to get done and I now have a better understanding of these, than before.
