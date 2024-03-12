@@ -115,8 +115,8 @@ struct Question {
     init(text: String, answers: [String], correctAnswer: String, category: String) {
         self.text = text
         self.correctAnswer = correctAnswer
-        self.answers = answers.shuffled() // This shuffles the answers
-        self.category = category // Initialize the category here
+        self.answers = answers.shuffled()
+        self.category = category
     }
 
     func isCorrect(answer: String) -> Bool {
