@@ -1,26 +1,26 @@
-# Project 3 - Trivia App
+# Project 4 - Trivia App
 
 Submitted by: Priyanka Bose
 
-The iOS Trivia App is a dynamic quiz experience featuring a diverse range of questions from multiple categories. Users can enjoy shuffled questions, track their score, and seamlessly restart the game for a fun time, not a long time.
+The iOS Trivia App is a dynamic quiz experience featuring a diverse range of questions from multiple categories. Users can enjoy shuffled questions, track their score, and seamlessly restart the game for a fun time, not a long time. The questions are pulled from ""
 
-Time spent: 16 hours
+Time spent: 15 hours
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [✓] User can view the current question and 4 different answers
-- [✓] User can view the next question after tapping an answer
-- [✓] User can answer at least 3 different questions
+- [✓] User can view and answer at least 5 trivia questions.
+- [✓] App retrieves question data from the Open Trivia Database API.
+- [✓] Fetch a different set of questions if the user indicates they would like to reset the game.
+- [✓] Users can see score after submitting all questions.
+- [✓] True or False questions only have two options.
 
 
 The following **optional** features are implemented:
 
-- [✓] User can use the vertical orientation of the app on any device
-- [✓] User can track the question they are on and how many questions are left
-- [✓] User can see how many questions they got correct after answering all questions
-- [✓] User should be able to restart the game after they've finished answering all questions
+- [ ] Allow the user to choose a specific category of questions.
+- [✓] Provide the user feedback on whether each question was correct before navigating to the next.
 
 The following **additional** features are implemented:
 
@@ -28,10 +28,10 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 <div>
-    <a href="https://www.loom.com/share/cab87acd1c344ac1b6fbb7c98ca51886">
+    <a href="https://www.loom.com/share/142ced587faa4dfa880ba30cc45f4efe">
     </a>
-    <a href="https://www.loom.com/share/cab87acd1c344ac1b6fbb7c98ca51886">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/cab87acd1c344ac1b6fbb7c98ca51886-1710250235040-with-play.gif">
+    <a href="https://www.loom.com/share/142ced587faa4dfa880ba30cc45f4efe">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/142ced587faa4dfa880ba30cc45f4efe-with-play.gif">
     </a>
   </div>
   
