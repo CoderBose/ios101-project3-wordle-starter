@@ -86,23 +86,19 @@ class QuizViewController: UIViewController {
         
         questionLabel.text = "Question \(currentQuestionIndex + 1)/\(triviaQuestions.count)"
         
-        // Decode HTML entities in category
         if let attributedCategory = try? NSAttributedString(data: question.category.data(using: .utf8)!,
                                                             options: [.documentType: NSAttributedString.DocumentType.html],
                                                             documentAttributes: nil) {
             categoryLabel.attributedText = attributedCategory
         } else {
-            // Fallback to plain text if decoding fails
             categoryLabel.text = question.category
         }
         
-        // Decode HTML entities in question text
         if let attributedQuestion = try? NSAttributedString(data: question.question.data(using: .utf8)!,
                                                             options: [.documentType: NSAttributedString.DocumentType.html],
                                                             documentAttributes: nil) {
             questionCardLabel.attributedText = attributedQuestion
         } else {
-            // Fallback to plain text if decoding fails
             questionCardLabel.text = question.question
         }
         
@@ -126,11 +122,9 @@ class QuizViewController: UIViewController {
         if title == currentQuestion.correctAnswer {
             correctAnswersCount += 1
             print("Correct!")
-            // Display feedback for correct answer (optional)
             displayAnswerFeedback(isCorrect: true)
         } else {
             print("Wrong!")
-            // Display feedback for incorrect answer (optional)
             displayAnswerFeedback(isCorrect: false)
         }
 
@@ -154,13 +148,10 @@ class QuizViewController: UIViewController {
             feedbackMessage = "Wrong! The correct answer is: \(correctAnswer)"
             feedbackColor = UIColor.red
         }
-        
-        // Optionally, you can display the feedback message or change UI elements
-        // For example, you can change the background color of the answer buttons
+
         answerButtons.forEach { $0.backgroundColor = feedbackColor }
         
-        // Optionally, you can display a message to the user
-        // For example, using a label at the bottom of the screen
+    
         let feedbackLabel = UILabel(frame: CGRect(x: 0, y: view.frame.height - 50, width: view.frame.width, height: 50))
         feedbackLabel.backgroundColor = feedbackColor.withAlphaComponent(0.8)
         feedbackLabel.textColor = UIColor.white
@@ -168,7 +159,6 @@ class QuizViewController: UIViewController {
         feedbackLabel.text = feedbackMessage
         view.addSubview(feedbackLabel)
         
-        // Remove the feedback label after a brief moment
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             feedbackLabel.removeFromSuperview()
         }
@@ -178,8 +168,8 @@ class QuizViewController: UIViewController {
     func restartGame() {
             currentQuestionIndex = 0
             correctAnswersCount = 0
-            triviaQuestions.removeAll() // Clear the existing trivia questions
-            fetchTriviaQuestions() // Fetch new trivia questions
+            triviaQuestions.removeAll()
+            fetchTriviaQuestions()
         }
 
     func showGameOverAlert() {

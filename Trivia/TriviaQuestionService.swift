@@ -8,7 +8,7 @@
 import Foundation
 
 class TriviaQuestionService {
-    private let apiUrl = "https://opentdb.com/api.php?amount=5&type=multiple" // Change the amount to fetch more or fewer questions
+    private let apiUrl = "https://opentdb.com/api.php?amount=5&type=multiple" // 5 questions being pulled
 
     func fetchTriviaQuestions(completion: @escaping ([TriviaQuestion]?, Error?) -> Void) {
         guard let url = URL(string: apiUrl) else {
