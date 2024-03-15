@@ -38,6 +38,7 @@ The following **additional** features are implemented:
 ## Notes
 
 Building an app from the ground up was very challenging. The constraints gave me a hard time, but it was fun to get done and I now have a better understanding of these, than before.
+Some of the data from the API was having format issues so I had to Google "NSAttributedString" and had to use it.
 
 ## License
 
